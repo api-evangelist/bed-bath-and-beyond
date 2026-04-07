@@ -1,7 +1,11 @@
 aid: bed-bath-and-beyond
-url: https://raw.githubusercontent.com/api-evangelist/bed-bath-and-beyond/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/bed-bath-and-beyond/refs/heads/main/apis.yml
 modified: '2026-03-23'
 apis: []
 common:
   - type: Website
     url: https://www.bed-bath-and-beyond.com
+description: >-
+  Bed Bath & Beyond is a chain of domestic merchandise retail stores selling home
+  furnishings, bedding, kitchenware, and other home goods.
