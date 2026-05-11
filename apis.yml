@@ -70,6 +70,25 @@ common:
         description: >-
           Suppliers submit catalog data, receive purchase orders, and send shipment
           notifications via EDI through the vendor portal.
+  - type: Integrations
+    url: https://www.bedbathandbeyond.com/apps
+integrations:
+  - name: Up to 15% Off Select Furniture*
+  - name: Up to 20% off Select Outdoor*
+  - name: Up To 40% off Select Bedding*
+  - name: Up to 20% off Select Bath*
+  - name: Up to 20% off Select Kitchen*
+  - name: Up to 25% off Select Decor*
+  - name: Up to 20% off Select Lighting*
+  - name: Shop All Sales & Deals
+  - name: Shop Outdoor Oasis
+  - name: Shop Kitchen Living
+  - name: Shop Sleep Solutions
+  - name: Shop Window Shop
+  - name: QR Code
+  - name: Bedroom with text messages superimposed
+  - name: Get inspired
+  - name: Earning rewards made easy
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
