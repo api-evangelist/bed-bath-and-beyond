@@ -23,6 +23,8 @@ tags:
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/bed-bath-and-beyond
   - type: Website
     url: https://www.bedbathandbeyond.com
   - type: Website
