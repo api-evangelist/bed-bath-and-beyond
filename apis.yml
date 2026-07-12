@@ -23,6 +23,10 @@ tags:
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: VulnerabilityDisclosure
+    url: security/bed-bath-and-beyond-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/bed-bath-and-beyond-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/bed-bath-and-beyond
   - type: Website
