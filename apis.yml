@@ -1,6 +1,17 @@
 aid: bed-bath-and-beyond
 name: Bed Bath And Beyond
 url: https://raw.githubusercontent.com/api-evangelist/bed-bath-and-beyond/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 created: '2026-03-23'
 modified: '2026-04-19'
 description: >-
@@ -11,7 +22,7 @@ description: >-
   online retail destination. Beyond Inc. also owns Overstock, buybuy BABY, and
   related brands.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bed-bath-and-beyond.png
 tags:
   - Bedding
   - Beyond
