@@ -1,0 +1,29 @@
+# Bed Bath & Beyond
+
+> Bed Bath & Beyond is an online home-goods retailer (bedding, bath, kitchen, decor, furniture) operated by Beyond Inc., formerly Overstock.com, which acquired the brand out of the 2023 bankruptcy. It is not an API company: its only external programmatic surface is a third-party marketplace seller API that runs as a tenant of the Mirakl Marketplace Platform, reachable only after a partner application is approved.
+
+<!-- generated: 2026-09-18 | method: generated | source: apis.yml + live probes (no provider-published llms.txt found: https://www.bedbathandbeyond.com/llms.txt returns the storefront HTML) -->
+
+## Company
+
+- [Website](https://www.bedbathandbeyond.com): Online storefront.
+- [Beyond Inc. (parent)](https://corporate.beyond.com/corporate/about): Corporate parent, formerly Overstock.com.
+- [Partner program](https://www.bedbathandbeyond.com/partner): How to apply to sell on the marketplace.
+- [Affiliates](https://www.bedbathandbeyond.com/affiliates): Affiliate marketing program.
+- [Customer Care Help Center](https://help.bedbathandbeyond.com/help/s/): Salesforce-hosted help site (JavaScript-rendered).
+
+## APIs
+
+- [Marketplace Seller API](https://www.bedbathandbeyond.com/partner): Base URL https://bedbathandbeyondus-prod.mirakl.net/api. Mirakl tenant; sellers generate a Shop API key from the seller portal (Profile > API Key) and send it in the Authorization header. GET /api/version answers publicly (platform 3.1306); everything else returns 401 without a key.
+- [Seller API reference (Mirakl vendor documentation)](https://developer.mirakl.com/content/product/mmp/rest/seller/openapi3): The contract is Mirakl's "Mirakl Marketplace APIs" specification with a templated server (https://your-instance.mirakl.net); it is not published by Bed Bath & Beyond.
+
+## Security and policy
+
+- [security.txt](https://www.bedbathandbeyond.com/.well-known/security.txt): Vulnerability contact vulnerability@overstock.com, policy https://www.overstock.com/security.
+- [Terms and Conditions](https://help.bedbathandbeyond.com/help/s/article/TERMS-AND-CONDITIONS)
+- [Privacy and Security Policy](https://help.bedbathandbeyond.com/help/s/article/PRIVACY-AND-SECURITY-POLICY)
+
+## Optional
+
+- [Marketplace help article](https://help.bedbathandbeyond.com/help/s/article/Overstock-Marketplace)
+- [Integrations](https://www.bedbathandbeyond.com/apps): Mobile apps page (no developer integrations).

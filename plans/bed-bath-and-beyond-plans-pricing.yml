@@ -1,0 +1,16 @@
+generated: '2026-09-18'
+method: searched
+source: https://www.bedbathandbeyond.com/partner
+plan_count: 0
+note: >-
+  No API plans or pricing are published. The only programmatic surface is the
+  Mirakl-hosted marketplace seller API, and access to it follows a partner
+  application ("Complete Our Form ... We'll contact you within a few weeks if
+  your business aligns") rather than a self-serve tier. Commission and seller
+  fee terms are not published on the partner page or the help center.
+evidence:
+  - url: https://www.bedbathandbeyond.com/partner
+    status: 200
+  - url: https://help.bedbathandbeyond.com/help/s/article/Overstock-Marketplace
+    status: 200
+plans: []

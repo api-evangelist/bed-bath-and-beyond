@@ -24,7 +24,7 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 created: '2026-03-23'
-modified: '2026-04-19'
+modified: '2026-09-18'
 description: >-
   Bed Bath & Beyond was a chain of domestic merchandise retail stores selling home
   furnishings, bedding, kitchenware, and other home goods. The company filed for
@@ -43,12 +43,73 @@ tags:
   - Marketplace
   - Retail
 specificationVersion: '0.23'
-apis: []
+apis:
+  - name: Bed Bath & Beyond Marketplace Seller API
+    description: >-
+      Seller-facing API for the Bed Bath & Beyond third-party marketplace, which
+      runs as a tenant of the Mirakl Marketplace Platform at
+      bedbathandbeyondus-prod.mirakl.net. Approved sellers generate a Shop API
+      key from the seller portal (Profile > API Key) and use it to manage
+      offers, orders, shipments and invoices. The host answers publicly on
+      GET /api/version (platform 3.1306) and 401s on every other resource
+      without a key. The contract is Mirakl's vendor-published Marketplace
+      APIs specification, not a Bed Bath & Beyond publication, so no OpenAPI
+      is stored in this repository; access is granted only after a partner
+      application is reviewed.
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/bed-bath-and-beyond.png
+    humanURL: https://www.bedbathandbeyond.com/partner
+    baseURL: https://bedbathandbeyondus-prod.mirakl.net/api
+    tags:
+      - Marketplace
+      - Sellers
+      - Orders
+      - Offers
+      - E-Commerce
+    properties:
+      - type: Documentation
+        url: https://developer.mirakl.com/content/product/mmp/rest/seller/openapi3
+        title: Mirakl Marketplace Platform seller API reference (vendor documentation)
+      - type: Login
+        url: https://bedbathandbeyondus-prod.mirakl.net/login
+        title: Seller portal login (API key issued under Profile > API Key)
+      - type: SignUp
+        url: https://www.bedbathandbeyond.com/partner
+        title: Partner application form
+      - type: Support
+        url: https://help.bedbathandbeyond.com/help/s/article/Overstock-Marketplace
+        title: Marketplace help article
+    x-ownership: >-
+      Tenant of a vendor platform. The API is served by Mirakl on a Bed Bath &
+      Beyond-named instance; its published OpenAPI (info.title "Mirakl
+      Marketplace APIs", servers https://your-instance.mirakl.net) belongs to
+      Mirakl and is deliberately not stored here.
 common:
   - type: VulnerabilityDisclosure
     url: security/bed-bath-and-beyond-vulnerability-disclosure.yml
   - type: DomainSecurity
     url: security/bed-bath-and-beyond-domain-security.yml
+  - type: WellKnown
+    url: well-known/bed-bath-and-beyond-well-known.yml
+  - type: SecurityTxt
+    url: well-known/bed-bath-and-beyond-security.txt
+  - type: Security
+    url: security/bed-bath-and-beyond-vulnerability-disclosure.yml
+  - type: LLMsTxt
+    url: llms/bed-bath-and-beyond-llms.txt
+  - type: Plans
+    url: plans/bed-bath-and-beyond-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/bed-bath-and-beyond-rate-limits.yml
+  - type: Partners
+    url: https://www.bedbathandbeyond.com/partner
+    title: Partner (marketplace seller) program
+  - type: Support
+    url: https://help.bedbathandbeyond.com/help/s/
+    title: Customer Care Help Center
+  - type: TermsOfService
+    url: https://help.bedbathandbeyond.com/help/s/article/TERMS-AND-CONDITIONS
+  - type: PrivacyPolicy
+    url: https://help.bedbathandbeyond.com/help/s/article/PRIVACY-AND-SECURITY-POLICY
   - type: LinkedIn
     url: https://www.linkedin.com/company/bed-bath-and-beyond
   - type: Website
@@ -120,3 +181,28 @@ integrations:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-18'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v3
+x-coverage:
+  state: gated
+  reason: sales-gate
+  detail: >-
+    The only API is a Mirakl-tenant marketplace seller API at
+    bedbathandbeyondus-prod.mirakl.net (GET /api/version answers publicly, every
+    other resource 401s) whose Shop API key is issued in the seller portal only
+    after the partner application form at bedbathandbeyond.com/partner is
+    reviewed; the contract is Mirakl's vendor specification and Bed Bath & Beyond
+    publishes no developer documentation of its own.
+  evidence:
+    - url: https://www.bedbathandbeyond.com/partner
+      status: 200
+    - url: https://bedbathandbeyondus-prod.mirakl.net/api/version
+      status: 200
+    - url: https://bedbathandbeyondus-prod.mirakl.net/api/offers
+      status: 401
+    - url: https://www.bedbathandbeyond.com/developers
+      status: 404
+  checked: '2026-09-18'

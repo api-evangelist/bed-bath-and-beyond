@@ -1,0 +1,5 @@
+Contact: mailto:vulnerability@overstock.com
+Contact: https://www.overstock.com/security
+Policy: https://www.overstock.com/security
+Encryption: https://overstock.com/pgp-public.key
+Signature: https://overstock.com/.well-known/security.txt.sig

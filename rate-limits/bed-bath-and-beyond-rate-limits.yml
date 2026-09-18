@@ -1,0 +1,16 @@
+generated: '2026-09-18'
+method: searched
+source: https://www.bedbathandbeyond.com/partner
+limit_count: 0
+note: >-
+  Bed Bath & Beyond publishes no rate limits of its own. The marketplace seller
+  API is a Mirakl tenant; any throttling and the headers it returns are Mirakl
+  platform behaviour documented by Mirakl for every tenant, not by Bed Bath &
+  Beyond, so nothing is recorded here as provider-published. An unauthenticated
+  GET on the tenant returns 401 with no RateLimit-* or Retry-After headers.
+evidence:
+  - url: https://bedbathandbeyondus-prod.mirakl.net/api/offers
+    status: 401
+  - url: https://developer.mirakl.com/content/product/mmp/rest/seller/openapi3
+    status: 200
+limits: []

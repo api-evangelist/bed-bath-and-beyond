@@ -1,0 +1,153 @@
+generated: '2026-09-18'
+method: probed
+source: live GET of /.well-known/* on every host the record knows (registrable domain + www, parent brand, help portal, marketplace tenant, corporate)
+note: >-
+  One real first-party document: www.bedbathandbeyond.com serves a security.txt
+  (contacts route to Overstock/Beyond Inc. security, the operating parent). Every
+  other /.well-known/* path on www.bedbathandbeyond.com and www.beyond.com answers
+  200 with the HTML storefront/corporate shell after a redirect, which is a miss.
+  help.bedbathandbeyond.com is a Salesforce Experience Cloud site and serves the
+  platform's OIDC discovery document (issuer help.bedbathandbeyond.com); it is
+  saved as evidence but it is Salesforce's tenant metadata, not a developer OAuth
+  surface. The Mirakl marketplace tenant serves Mirakl's own security.txt
+  (Contact vdp.mirakl.com), recorded but not claimed for this provider.
+hosts:
+  - host: www.bedbathandbeyond.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        content_type: text/plain
+        file: bed-bath-and-beyond-security.txt
+      - path: /.well-known/openid-configuration
+        status: 200
+        content_type: text/html
+        file: null
+        note: redirects to the storefront homepage; HTML shell, treated as absent
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        content_type: text/html
+        file: null
+        note: redirects to the storefront homepage; HTML shell, treated as absent
+      - path: /.well-known/oauth-protected-resource
+        status: 200
+        content_type: text/html
+        file: null
+        note: redirects to the storefront homepage; HTML shell, treated as absent
+      - path: /.well-known/api-catalog
+        status: 200
+        content_type: text/html
+        file: null
+        note: redirects to the storefront homepage; HTML shell, treated as absent
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        content_type: text/html
+        file: null
+        note: redirects to the storefront homepage; HTML shell, treated as absent
+      - path: /.well-known/agent-card.json
+        status: 200
+        content_type: text/html
+        file: null
+        note: redirects to the storefront homepage; HTML shell, treated as absent
+      - path: /.well-known/agent.json
+        status: 200
+        content_type: text/html
+        file: null
+        note: redirects to the storefront homepage; HTML shell, treated as absent
+  - host: www.beyond.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        content_type: text/html
+        file: null
+        note: every path redirects to corporate.beyond.com/corporate/about; HTML shell, treated as absent
+      - path: /.well-known/openid-configuration
+        status: 200
+        content_type: text/html
+        file: null
+        note: redirect to corporate about page; treated as absent
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        content_type: text/html
+        file: null
+        note: redirect to corporate about page; treated as absent
+      - path: /.well-known/api-catalog
+        status: 200
+        content_type: text/html
+        file: null
+        note: redirect to corporate about page; treated as absent
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        content_type: text/html
+        file: null
+        note: redirect to corporate about page; treated as absent
+      - path: /.well-known/agent-card.json
+        status: 200
+        content_type: text/html
+        file: null
+        note: redirect to corporate about page; treated as absent
+      - path: /.well-known/agent.json
+        status: 200
+        content_type: text/html
+        file: null
+        note: redirect to corporate about page; treated as absent
+  - host: corporate.beyond.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+  - host: help.bedbathandbeyond.com
+    documents:
+      - path: /.well-known/openid-configuration
+        status: 200
+        content_type: application/json
+        file: bed-bath-and-beyond-openid-configuration.json
+        note: >-
+          Salesforce Experience Cloud platform OIDC metadata for the customer-care
+          community (issuer https://help.bedbathandbeyond.com); platform-generated,
+          not a Bed Bath & Beyond developer OAuth surface.
+      - path: /.well-known/security.txt
+        status: 401
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 401
+        file: null
+      - path: /.well-known/oauth-protected-resource
+        status: 401
+        file: null
+      - path: /.well-known/api-catalog
+        status: 401
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 401
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 401
+        file: null
+      - path: /.well-known/agent.json
+        status: 401
+        file: null
+  - host: bedbathandbeyondus-prod.mirakl.net
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        content_type: text/plain
+        file: null
+        note: Mirakl's platform security.txt (Contact https://vdp.mirakl.com); belongs to the vendor, not claimed
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+  - host: api.bedbathandbeyond.com
+    documents:
+      - path: /
+        status: 0
+        file: null
+        note: resolves but every request times out (HTTP/2 INTERNAL_ERROR, HTTP/1.1 no bytes); storefront-internal API host referenced by the site's own JavaScript
