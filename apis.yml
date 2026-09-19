@@ -62,6 +62,12 @@ apis:
     tags:
       - Marketplace
       - Sellers
+      - Order
+      - Offers
+      - E-Commerce
+    tags_raw:
+      - Marketplace
+      - Sellers
       - Orders
       - Offers
       - E-Commerce
