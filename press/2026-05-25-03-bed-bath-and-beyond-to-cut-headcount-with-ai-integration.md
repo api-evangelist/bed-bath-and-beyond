@@ -1,7 +1,9 @@
 ---
 title: Bed Bath & Beyond to Cut Headcount with AI Integration
 url: https://www.linkedin.com/posts/paul-young-055632b_bed-bath-beyond-ceo-ai-will-lead-to-significant-activity-7454940752268288000-uCFl
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Bed Bath & Beyond" press release artificial intelligence'
 position: 3
 source: serpapi-google

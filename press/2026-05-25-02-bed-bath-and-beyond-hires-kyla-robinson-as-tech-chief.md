@@ -1,7 +1,9 @@
 ---
 title: Bed Bath & Beyond hires Kyla Robinson as tech chief
 url: https://www.stocktitan.net/news/BBBY/bed-bath-beyond-appoints-kyla-robinson-to-lead-technology-zeo6fey1p452.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Bed Bath & Beyond" press release artificial intelligence'
 position: 2
 source: serpapi-google
