@@ -1,4 +1,4 @@
-# Bed Bath And Beyond (bed-bath-and-beyond)
+# Bed Bath And Beyond
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,57 +64,99 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Bed Bath & Beyond was a chain of domestic merchandise retail stores selling home
-furnishings, bedding, kitchenware, and other home goods. The company filed for
-Chapter 11 bankruptcy in April 2023. The brand was subsequently acquired by
-Beyond Inc. (formerly Overstock.com), which relaunched Bed Bath & Beyond as an
-online retail destination. Beyond Inc. also owns Overstock, buybuy BABY, and
-related brands.
+Bed Bath & Beyond was a chain of domestic merchandise retail stores selling home furnishings, bedding, kitchenware, and other home goods. The company filed for Chapter 11 bankruptcy in April 2023. The brand was subsequently acquired by Beyond Inc. (formerly Overstock.com), which relaunched Bed Bath & Beyond as an online retail destination. Beyond Inc. also owns Overstock, buybuy BABY, and related brands.
 
-**URL:** [https://www.bedbathandbeyond.com](https://www.bedbathandbeyond.com)
+**Areas:** Bedding · Beyond · E-Commerce · Home Goods · Kitchenware · Marketplace · Retail
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Bed Bath And Beyond on APIs.io
 
-## Tags:
+Everything profiled for Bed Bath And Beyond is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/bed-bath-and-beyond/](https://apis.io/providers/bed-bath-and-beyond/)** — or go straight to one of the APIs or properties below.
 
- - Bedding, Beyond, E-Commerce, Home Goods, Kitchenware, Marketplace, Retail
+### APIs (1)
 
-## Timestamps
+- [Bed Bath & Beyond Marketplace Seller API](https://apis.io/apis/bed-bath-and-beyond/bed-bath-beyond-marketplace-seller-api/) — Seller-facing API for the Bed Bath & Beyond third-party marketplace, which runs as a tenant of the Mirakl Marketplace Platform at…
 
-- **Created:** 2026-03-23
-- **Modified:** 2026-04-19
+### Published properties
 
-## Common Properties
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Bed Bath And Beyond Domain Security](https://apis.io/security/bed-bath-and-beyond/bed-bath-and-beyond-domain-security/)
+- [Bed Bath And Beyond Vulnerability Disclosure](https://apis.io/security/bed-bath-and-beyond/bed-bath-and-beyond-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Bed Bath And Beyond Plans Pricing](https://apis.io/plans/bed-bath-and-beyond/bed-bath-and-beyond-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Bed Bath And Beyond Rate Limits](https://apis.io/rate-limits/bed-bath-and-beyond/bed-bath-and-beyond-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.bedbathandbeyond.com)
-- [Beyond Inc. (Parent Company)](https://www.beyond.com)
-- [Marketplace Seller Program](https://help.bedbathandbeyond.com/help/s/article/Overstock-Marketplace)
+- [Support](https://help.bedbathandbeyond.com/help/s/)
+- [Terms of service](https://help.bedbathandbeyond.com/help/s/article/TERMS-AND-CONDITIONS)
+- [Privacy policy](https://help.bedbathandbeyond.com/help/s/article/PRIVACY-AND-SECURITY-POLICY)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Online Retail | Bed Bath & Beyond operates as an online-only retail destination following the 2023 bankruptcy and brand acquisition by Beyond Inc. |
-| Marketplace | Third-party sellers can list products through the Bed Bath & Beyond marketplace, integrated via Rithum (formerly CommerceHub). |
-| EDI Integration | Supplier integrations use X12 EDI documents transmitted through value-added networks, including EDI 850 purchase orders, EDI 856 advance ship notices, and EDI 846 inventory feeds. |
+**Kin Score 19.9** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 14.3 |
+| Access clarity | 34.2 |
 
-| Name | Description |
-|------|-------------|
-| Marketplace Selling | Third-party vendors can list and sell products on the Bed Bath & Beyond marketplace by integrating through approved channel management platforms. |
-| Supplier Integration | Suppliers submit catalog data, receive purchase orders, and send shipment notifications via EDI through the vendor portal. |
+**Agent readiness 17.6** — agent-aware
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Rithum (CommerceHub) | Primary integration platform for marketplace sellers to connect inventory, orders, and shipment tracking with Bed Bath & Beyond. |
-| Sellercloud | Multi-channel ecommerce platform supporting Bed Bath & Beyond marketplace order management via API and EDI. |
-| Dscopify (Supplier Oasis) | Shopify and Supplier Oasis integration for connecting vendor catalogs with the Bed Bath & Beyond and Overstock marketplace channels. |
+**Regulatory alignment 25.5** — Horizontal (data, software, accessibility, platform)
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/bed-bath-and-beyond/](https://apis.io/providers/bed-bath-and-beyond/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** kin@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Bed Bath And Beyond: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/bed-bath-and-beyond/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
